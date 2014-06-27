@@ -1,0 +1,10 @@
+.idea
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+/nbproject
+atlassian-ide-plugin.xml
