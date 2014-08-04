@@ -30,8 +30,11 @@ else
 fi
 
 ## Date
-WEEKDAY_NUM=`date +%u`
-WEEK_NUM=`date +%V`
+WEEKDAY_NUM=`date +%u`;
+WEEK_NUM=`date +%V`;
+
+## Factore to enshure colours
+FACTOR=3;
 
 ## Pacman pattern
 case "$WEEKDAY_NUM" in
@@ -45,7 +48,7 @@ case "$WEEKDAY_NUM" in
 esac
 
 ## Calculate how many times today changes to be made
-REPEAT=${CURRENT_DAY[$((WEEK_NUM-1))]};
+REPEAT=${CURRENT_DAY[$((WEEK_NUM-1))]}*${FACTOR};
 
 ## Random messages
 RANDMSG[0]='There my hairs stand up to the mountain';
@@ -69,10 +72,10 @@ function pacommit() {
   cd ${PACHUB_PATH} && echo ${MSG} >> game.pgb
 
   # 2. add changes to git
-  cd ${PACHUB_PATH} && ${GIT_PATH} add game.pgb
+  # cd ${PACHUB_PATH} && ${GIT_PATH} add game.pgb
 
   # 3. create a random git message and commit
-  cd ${PACHUB_PATH} && ${GIT_PATH} commit -m"${MSG}" >> git.log
+  #cd ${PACHUB_PATH} && ${GIT_PATH} commit -m"${MSG}" >> git.log
 }
 
 # Call function
@@ -81,4 +84,4 @@ for ((i=1; i<=${REPEAT}; i++)); do
 done
 
 # 4. push commit all changes to remote repository
-cd ${PACHUB_PATH} && ${GIT_PATH} push >> git.log
+# cd ${PACHUB_PATH} && ${GIT_PATH} push >> git.log
