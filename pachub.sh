@@ -33,9 +33,6 @@ fi
 WEEKDAY_NUM=`date +%u`;
 WEEK_NUM=`date +%V`;
 
-## Factore to enshure colours
-FACTOR=1;
-
 ## Pacman pattern
 case "$WEEKDAY_NUM" in
   1) CURRENT_DAY=(1 1 1 1 1 1 1 3 3 3 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 4 4 4 4 1 1 1 1 1 1 3 3 3 3 3 1 1 1 1) ;;
@@ -48,7 +45,7 @@ case "$WEEKDAY_NUM" in
 esac
 
 ## Calculate how many times today changes to be made
-REPEAT=${CURRENT_DAY[$((WEEK_NUM-1))]}*${FACTOR};
+REPEAT=${CURRENT_DAY[$((WEEK_NUM-1))]}*${CURRENT_DAY[$((WEEK_NUM-1))]};
 
 ## Random messages
 RANDMSG[0]='There my hairs stand up to the mountain';
