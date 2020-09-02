@@ -1,17 +1,17 @@
 #!/bin/bash
 
 #########################################################
-#	    ____                    __  __            __	    #
-#	   / __ \  ____ _  _____   / / / /  __  __   / /_ 	  #
-#	  / /_/ / / __ `/ / ___/  / /_/ /  / / / /  / __ \	  #
-#	 / ____/ / /_/ / / /__   / __  /  / /_/ /  / /_/ /	  #
-#	/_/      \__,_/  \___/  /_/ /_/   \__,_/  /_.___/ 	  #
-#														                            #
+#      ____                    __  __            __     #
+#     / __ \  ____ _  _____   / / / /  __  __   / /_    #
+#    / /_/ / / __ `/ / ___/  / /_/ /  / / / /  / __ \   #
+#   / ____/ / /_/ / / /__   / __  /  / /_/ /  / /_/ /   #
+#  /_/      \__,_/  \___/  /_/ /_/   \__,_/  /_.___/    #
+#                                                       #
 #########################################################
 
-# @author		André Lademann <vergissberlin@gmail.com>
-# @copyright	André Lademann, 2020
-# @license		http://andrelademann.de/license/mit
+# @author     André Lademann <vergissberlin@gmail.com>
+# @copyright  André Lademann, 2020
+# @license    http://andrelademann.de/license/mit
 
 # Vars
 ## Directories
