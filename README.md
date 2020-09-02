@@ -40,7 +40,7 @@ git clone git@github.com:PacHub/pachub.git
 ### Install crontab
 
 ```bash
-crontag -e
+crontab -e
 ```
 
 Then enter:
